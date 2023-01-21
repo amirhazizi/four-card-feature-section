@@ -1,0 +1,13 @@
+// import config variables
+@import "./utils/config";
+@import "./utils/variables";
+
+// Footer
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
