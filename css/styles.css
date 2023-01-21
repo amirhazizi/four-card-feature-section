@@ -14,11 +14,14 @@ body {
 
 img {
   display: block;
-  width: 100%;
 }
 
 a {
   text-decoration: none;
+}
+
+body {
+  background: hsl(0deg, 0%, 98%);
 }
 
 .attribution {

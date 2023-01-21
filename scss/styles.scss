@@ -1,6 +1,9 @@
 // import config variables
 @import "./utils/config";
 @import "./utils/variables";
+body {
+  background: $cl-veryLightGray;
+}
 
 // Footer
 
