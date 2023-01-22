@@ -1,6 +1,7 @@
 // import config variables
 @import "./utils/config";
 @import "./utils/variables";
+@import "./components/cards";
 
 body {
   background: $cl-veryLightGray;
@@ -17,6 +18,8 @@ body {
     margin-bottom: 6rem;
     h1 {
       font-size: 1.5rem;
+      max-width: 400px;
+      margin: 0 auto;
       margin-bottom: 1rem;
       span {
         font-weight: 200;
@@ -27,38 +30,6 @@ body {
       line-height: 1.6;
       //   max-width: 600px;
       //   font-size: 0.8rem;
-    }
-  }
-  .card-center {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    align-items: center;
-
-    gap: 2rem;
-  }
-  .special-cards {
-    display: grid;
-    gap: 2rem;
-  }
-  .card {
-    background-color: white;
-    padding: 2rem;
-    // margin-bottom: 2rem;
-    border-radius: 5px;
-    border-top: 3px solid $cl-cyan;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.064);
-    h2 {
-      margin-bottom: 0.5rem;
-      color: $cl-veryDarkBlue;
-    }
-    p {
-      font-size: 0.8rem;
-      color: $cl-grayishBlue;
-      line-height: 1.6;
-    }
-    &-logo {
-      margin-top: 2.5rem;
-      margin-left: auto;
     }
   }
 }
