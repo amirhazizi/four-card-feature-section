@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 *,
 ::before,
 ::after {
@@ -44,7 +45,8 @@ a {
 
 .card-center {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  margin: 0 auto;
   align-items: center;
   gap: 2rem;
 }
@@ -111,8 +113,7 @@ body {
 }
 .section-header h1 {
   font-size: 1.5rem;
-  max-width: 400px;
-  margin: 0 auto;
+  color: hsl(234deg, 12%, 34%);
   margin-bottom: 1rem;
 }
 .section-header h1 span {
@@ -123,11 +124,64 @@ body {
   line-height: 1.6;
 }
 
+footer {
+  position: fixed;
+  padding: 0 0.5rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  min-width: 360px;
+}
+
 .attribution {
+  background: white;
   font-size: 11px;
   text-align: center;
+  font-size: 0.7rem;
 }
 
 .attribution a {
   color: hsl(228deg, 45%, 44%);
+  font-weight: 700;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 968px) {
+  .container {
+    width: 80vw;
+  }
+  .section h1 {
+    max-width: 700px;
+    font-size: 3rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .section p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+  }
+  .section-header p {
+    font-size: 1rem;
+  }
 }

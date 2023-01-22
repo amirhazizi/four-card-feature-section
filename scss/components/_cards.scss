@@ -1,0 +1,50 @@
+@use "../utils/config";
+@use "../utils/variables";
+.card-center {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  margin: 0 auto;
+  align-items: center;
+  gap: 2rem;
+}
+.special-cards {
+  display: grid;
+  gap: 2rem;
+}
+#card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 5px;
+  border-top: 3px solid transparent;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.064);
+  h2 {
+    margin-bottom: 0.5rem;
+    color: $cl-veryDarkBlue;
+  }
+  p {
+    font-size: 0.8rem;
+    color: $cl-grayishBlue;
+    line-height: 1.8;
+    padding-right: 2rem;
+  }
+  .card-logo {
+    margin-top: 3rem;
+    margin-left: auto;
+  }
+}
+.card-1 {
+  @extend #card;
+  border-color: $cl-cyan;
+}
+.card-2 {
+  @extend #card;
+  border-color: $cl-red;
+}
+.card-3 {
+  @extend #card;
+  border-color: $cl-orange;
+}
+.card-4 {
+  @extend #card;
+  border-color: $cl-blue;
+}
